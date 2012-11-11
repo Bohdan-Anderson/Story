@@ -1,7 +1,8 @@
 <h1>TEXT BASED ADVENTURE GAME!!!</h1>
 AS of right now, I've got the game loading in the data dynamically. <br>
 Next step is to be able to edit the data.<br>
-Then included users.<br>
+Then included creators so they can have their own games.<br>
+Be able to record what the players of the game write<br>
 Then fix up the Game it self a bit<br>
   <ul>
   <li>as in make everything lower case once typed in</li>

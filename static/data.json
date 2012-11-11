@@ -1,0 +1,27 @@
+[
+[0,"start",false,
+"Hello This is Bohdan's first game!!!<br>As of right now it doesn't work in firfox(sorry)<br>you can type in full sentences,<br>type <c>Start</c> to begin the game.",
+{"start":0,"Start":0,"START":0,"exit":5,"end":4},
+"<br>lets start this!!"],
+
+[1,"intro",false,
+"<br>------------------<br>------------------<br>------------------<br>John and phill where walking down the street, <br>to their left was the road with lots of traffic, <br>they realized they needed to cross the street <br>they go to...",
+{"look":{"left":0,"traffic":0,"right":7,"both":{"ways":0,"directions":0}},"crosswalk":{"go":0,"to":0},"cross":{"walk":{"go":0,"to":0}},"wait":{"trafic":{"stop":0,"break":0,"clear":0},"cars":{"pass":0,"no":0}}},
+" they manage to avoid the traffic and take their first steeps out on to the street"],
+
+[2,"walking",false,"<br>left Foot",
+{"right":{"foot":0}, "Right":{"Foot":0}, "rightfoot":0},
+"<br>left Foot"],
+
+[3,"walking",false,"<br>right Foot",
+{"left":{"foot":0}, "Left":{"Foot":0}, "leftfoot":0},
+"<br>right Foots"],
+
+[4,"dieing",false,"<br>the Sweeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeching of tires <br> you died.",
+{" ":0,"no":0},
+"<br>too bad"],
+
+[5,"end",true,"<br>Good job your finished the game<br>type <c>Exit</c> to end the game",
+{"exit":0,"Exit":0,"EXIT":0},
+"!!<br>Too bad it's not an actual game where you can exit<br>This is all done in the browser<br>and so theres nothing that fancy like quitting."]
+]

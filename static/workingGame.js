@@ -1,10 +1,5 @@
 window.onload = start;
 
-
-var temp = {"name":["bohdan","anders"],"location":["oakville","ontartio"]}
-
-
-
 var counter = 0;
 var words;
 
@@ -15,9 +10,11 @@ function focus(){
 function start(){
 	setTimeout(intro, 1);
 	focus();
+
 }
 
 window.onclick = focus;
+
 function enterTest(myElement,Content){
 	var key = 0;
 	if(window.event){
@@ -29,6 +26,7 @@ function enterTest(myElement,Content){
 	if(key == 13){
 		words = Content[counter][3];		
 		addText(words,counter);
+
 		return true;
 	} else {
 		return false;
@@ -45,6 +43,11 @@ function addText(){
 	var text =  document.getElementById("input");
 	var textsplit = text.value.split(" ");
 	var goToScene = wordInObject(textsplit,words);
+
+	//sends dats to the server dynamically
+	$.getJSON("", {'data':text.value, 'scene':Content[counter][1]})
+
+
 	if(goToScene>=0){
 		softWrite("<br>" + text.value);			
 		softWrite(Content[counter][4]);	
@@ -61,6 +64,7 @@ function addText(){
 	}
 	text.setAttribute("value","");
 }
+
 
 //will go as deep as needed, this is a itterative function
 function wordInObject(input,object){
@@ -80,4 +84,3 @@ function wordInObject(input,object){
 function intro(){
 	softWrite(Content[counter][2]);
 }
-

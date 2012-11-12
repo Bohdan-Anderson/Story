@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
 	<title>The Game</title>
+	<script type = "text/javascript" src="/../static/jquery.js">
+	</script>
 	<script>
 		var Content = {{data|safe}}
 	</script>
@@ -12,6 +14,6 @@
 <body>
 	<div id="story">
 	</div>
-	<input type="text" class="input" name="nameInput" id="input" onkeydown="if(enterTest(this,Content)==true){this.value=null;}">
+		<input type="text" class="input" name="nameInput" id="input" onkeydown="if(enterTest(this,Content)==true){this.value=null;}">
 </body>
 </html>

@@ -1,0 +1,7 @@
+start start {'year':2012, 'month':11,'day':11, 'hour':21, 'miute':14, 'second':52} 
+test this shit intro {'year':2012, 'month':11,'day':11, 'hour':21, 'miute':14, 'second':55} 
+start start {'year':2012, 'month':11,'day':11, 'hour':21, 'miute':30, 'second':32} 
+exit intro {'year':2012, 'month':11,'day':11, 'hour':21, 'miute':30, 'second':35} 
+start start {'year':2012, 'month':11,'day':11, 'hour':21, 'miute':32, 'second':20} 
+start start {'year':2012, 'month':11,'day':11, 'hour':21, 'miute':51, 'second':17} 
+yep all is working now look left intro {'year':2012, 'month':11,'day':11, 'hour':21, 'miute':51, 'second':24} 

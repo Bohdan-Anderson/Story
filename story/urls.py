@@ -1,19 +1,24 @@
 from django.conf.urls import patterns, include, url
-from story.views import hello, viewData, editData, playGame
+from story.views import  editData, playGame, viewUsersStories, createStory
+
+from django.contrib.auth.views import login, logout
 
 from django.contrib import admin
 admin.autodiscover()
+
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	('^hello/$', hello),
-	(r'^admin/', include(admin.site.urls)),
-	(r'^viewData/', viewData),
-	(r'^editData/', editData),
-    (r'^playGame/', playGame)
+	#(r'^admin/$', include(admin.site.urls)),
+	(r'^editData/$', editData),
+    (r'^playGame/$', playGame),
+    (r'^objectView/$', viewUsersStories),
+    (r'^createStory/$',createStory),
+    (r'^login/$', login),
+    (r'^logout/$', logout),
 
     # Examples:
     # url(r'^$', 'story.views.home', name='home'),
@@ -23,5 +28,5 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    #url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
 )

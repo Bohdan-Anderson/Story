@@ -1,0 +1,29 @@
+html{
+	background-color: rgb(40,40,40);
+	font-family: Monospace;
+
+}
+body{
+	color:white;
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+c{
+	color:rgb(250,150,150);
+}
+
+a{
+	text-decoration:none;
+	color:rgb(150,250,150);		
+}
+
+#story{
+
+}
+
+#input{
+	color: white;
+	background-color: rgb(40,40,40);
+}
